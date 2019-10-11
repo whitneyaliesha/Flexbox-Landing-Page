@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+header {
+  -webkit-box-shadow: 0px 10px 14px -5px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 10px 14px -5px rgba(0,0,0,0.43);
+  box-shadow: 0px 10px 14px -5px rgba(0,0,0,0.43);
+  padding: 15px;
+
+}
+
+body > section {
+  min-height: 200px;
+  padding: 20px;
+}
+
+body > section:nth-child(odd) {
+  background-color: #eee;
+
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.price-card {
+  text-align: center;
+  border: 1px solid royalblue;
+  min-height: 200px;
+  border-radius: 3px;
+  min-width: 125px;
+  margin: 20px;
+}
+
+
+.price-card > .price {
+  display: block;
+  font-size: 50px;
+}
+
+.price-card > .plan-name {
+  background-color: royalblue;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.price-card > .per-month {
+  display: block;
+  font-size: 21px;
+  color: grey;
+}
+
+.price-card > .buy {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin-top: 25px;
+  width: 87%;
+
+}
+
+.price-card > .buy:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 613px) {
+  .price-card {
+    text-align: center;
+    border: 1px solid royalblue;
+    min-height: 300px;
+    border-radius: 3px;
+    min-width: 225px;
+    margin: 20px;
+  }
+
+  .price-card > .per-month {
+    display: block;
+    font-size: 35px;
+    color: grey;
+  }
+
+  .price-card > .price {
+    font-size: 85px;
+  }
+
+}
